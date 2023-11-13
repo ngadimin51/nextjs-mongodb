@@ -10,9 +10,9 @@ export async function connectToDatabase(): Promise<Db> {
 }
 
 export async function startMongoSession() {
-    return client.startSession();
+    return client.startSession(); // Start session
 }
 
 export async function closeConnection(): Promise<void> {
-    await client.close();
+    await client.close(); // close connection
 }
