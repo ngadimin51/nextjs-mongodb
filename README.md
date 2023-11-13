@@ -39,7 +39,7 @@ First, make sure you has mongodb as database on your PC/SERVER
 then install and run the development server:
 
 ```bash
-yan
+yarn
 
 yarn dev
 ```
