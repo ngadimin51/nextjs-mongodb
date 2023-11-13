@@ -1,5 +1,15 @@
 Visit my page [nDalu.id](https://ndalu.id/) project using [Next.js](https://nextjs.org/) and [MongoDB](https://www.mongodb.com/).
 
+# COURSE
+
+1. Install MongoDB
+2. Learn CRUD MongoDB using MongoDB Compass
+3. Install nextjs App (ver.14)
+4. Connect db MongoDB on NextJS
+5. Create Page Server Component to get data from database MongoDB
+6. Create Component using client component and do CRUD using MongoDB
+7. Build for production
+
 ## Getting Started
 
 Package
@@ -49,3 +59,24 @@ app (doc root)
 ## TODO
 
 - Create a ppt, blog and video full presentation for this project as course. Wish can help someone out there
+- Add connection for free MongoDB Atlas
+
+## SUPPORT
+
+Please Fork
+
+Star ⭐
+
+Share
+
+[Donation - Paypal](https://paypal.me/tofiknuryanto)
+
+[Donation - Buy me a coffee](https://www.buymeacoffee.com/tofiknuryanto)
+
+[Ask me on telegram ( Sometime slow response, sorry I'mm hungry )](https://t.me/ndaludotid)
+
+Bank JAGO/Artos - 506443461704
+
+Other BANK by chat telegram
+
+Still updating every have a break time from my activity
