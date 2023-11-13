@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Visit my page [nDalu.id](https://ndalu.id/) project using [Next.js](https://nextjs.org/) and [MongoDB](https://www.mongodb.com/).
 
 ## Getting Started
 
@@ -45,3 +45,7 @@ app (doc root)
 ------ components (all components stored here)
 ------ lib (database connection and queries)
 ```
+
+## TODO
+
+- Create a ppt, blog and video full presentation for this project as course. Wish can help someone out there
