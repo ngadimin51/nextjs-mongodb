@@ -9,9 +9,9 @@ interface Users {
   age: number;
 }
 
-export default function GetData({dataUser}:{dataUser:Users[]}) {
+export default function GetData() {
     const [message, setMessage] = useState<string>('')
-    const [data, setData] = useState(dataUser)
+    const [data, setData] = useState<Users[]>([])
     const [update, setUpdate] = useState<Users|boolean>(false)
     const [form, setForm] = useState(false)
     const [filter, setFilter] = useState('')

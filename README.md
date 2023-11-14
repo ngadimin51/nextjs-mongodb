@@ -10,6 +10,10 @@ Visit my page [nDalu.id](https://ndalu.id/) project using [Next.js](https://next
 6. Create Component using client component and do CRUD using MongoDB
 7. Build for production
 
+## PAGE
+
+![Sample CRUD page on NextJs - MONGODB](/public/sample.gif "Sample")
+
 ## Getting Started
 
 Package
