@@ -14,6 +14,8 @@ export async function getUsers({
         }
     }
     const session = await startMongoSession();
+    const timestamp = new Date().getTime()
+    console.log(`Session start ${timestamp}`)
     try {
         const data = await session.withTransaction(async () => { // menggunakan session untuk pengelolaan abortTransaction dan close
             const db = await connectToDatabase(); // koneksi database
@@ -33,6 +35,7 @@ export async function getUsers({
             data: []
         }
     } finally {
+        console.log(`Session close ${timestamp}`)
         session.endSession(); // menutup sesi
     }
 }

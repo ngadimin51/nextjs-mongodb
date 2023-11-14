@@ -1,8 +1,8 @@
 // ts-mongodb-config.ts
 import { MongoClient, Db } from 'mongodb';
 
-const uri = 'mongodb://localhost:27017';
-const client = new MongoClient(uri);
+// localhost
+const client = new MongoClient(process.env.mongoURI || '');
 
 export async function connectToDatabase(): Promise<Db> {
     await client.connect();

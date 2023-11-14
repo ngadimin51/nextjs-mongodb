@@ -6,6 +6,8 @@ const collectionName:string = 'users'
 export async function updateUsers({_id, name, age}:{_id:string;name:string;age:number}) {
     name = name.trim()
     const session = await startMongoSession();
+    const timestamp = new Date().getTime()
+    console.log(`Session start ${timestamp}`)
     try {
         return await session.withTransaction(async () => { // menggunakan session untuk pengelolaan abortTransaction dan close
             const db = await connectToDatabase(); // koneksi database
@@ -50,6 +52,7 @@ export async function updateUsers({_id, name, age}:{_id:string;name:string;age:n
             data: []
         }
     } finally {
+        console.log(`Session end ${timestamp}`)
         session.endSession(); // menutup sesi
     }
 }

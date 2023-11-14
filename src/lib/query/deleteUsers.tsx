@@ -4,6 +4,8 @@ import { ObjectId } from 'mongodb'
 
 export async function deleteUsers({_id}:{_id:string}) {
     const db = await connectToDatabase() // mulai koneksi database
+    const timestamp = new Date().getTime()
+    console.log(`Connection start ${timestamp}`)
     try {
         const data = await db.collection(collectionName).deleteOne({ _id: new ObjectId(_id) });
         if ( data.deletedCount > 0 ) {
@@ -26,6 +28,7 @@ export async function deleteUsers({_id}:{_id:string}) {
             data: []
         }
     } finally {
+        console.log(`Connection end ${timestamp}`)
         closeConnection() // menutup koneksi
     }
 }

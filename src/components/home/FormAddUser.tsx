@@ -51,7 +51,7 @@ export default function FormAddUser({
 
     return <form
         action={submitUser}
-        className="w-full max-w-sm bg-white px-2 py-2 rounded shadow-md mt-4"
+        className="w-full max-w-sm bg-white px-2 py-2 rounded shadow-md my-4"
         id="formUser"
     >
         <div className="md:flex md:items-center mb-6">
@@ -95,19 +95,15 @@ export default function FormAddUser({
                 </span>
             </label>
         </div>
-        <div className="md:flex md:items-center">
-            <div className="md:w-1/3">
-                <button
-                    className="shadow bg-lime-500 hover:bg-lime-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                    type="button"
-                    onClick={() => setUpdate()}
-                >CANCEL</button>
-            </div>
-            <div className="md:w-2/3">
-                <button className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
-                    SUBMIT
-                </button>
-            </div>
+        <div className="flex justify-between items-center">
+            <button className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded text-xs" type="submit">
+                submit
+            </button>
+            <button
+                className="shadow bg-lime-500 hover:bg-lime-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded text-xs mb-1"
+                type="button"
+                onClick={() => setUpdate()}
+            >cancel</button>
         </div>
     </form>
 }
